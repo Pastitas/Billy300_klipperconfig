@@ -1,5 +1,5 @@
 # Setup instructions for Billy300
-Billy300 is a heavily modded ender3 with skr1.3, direct drive bmg extruder,tmc2208, rpi and screen and klipper.
+Billy300 is a heavily modded ender3 with direct drive afterburner, tmc2208 in a skr1.3, touchscreen and running klipper firmware.
 
 ## Fluidd/Klipper https://docs.fluidd.xyz/
 Use the default image from fluidd and recompile the firmware with the following instructions: https://www.voron.dev/home/voron-2-2-supplement/skr-1-3-configuration/SKR%201.3%20Setup%20Guide.pdf
