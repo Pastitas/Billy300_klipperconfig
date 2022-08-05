@@ -2,7 +2,7 @@
 Billy300 is a heavily modded ender3 with direct drive afterburner, tmc2208 in a skr1.3, touchscreen and running klipper firmware.
 
 ## Fluidd/Klipper https://docs.fluidd.xyz/
-Use the default image from fluidd and recompile the firmware for skr 1.3 with the following instructions: https://www.voron.dev/home/voron-2-2-supplement/skr-1-3-configuration/SKR%201.3%20Setup%20Guide.pdf
+Use the default image from fluidd and recompile the firmware for skr 1.3 with the following instructions: https://docs.vorondesign.com/build/software/skr13_klipper.html
 There is a setting to switch the relay in gpio21 on moonraker.
 
 ## LCD screen
