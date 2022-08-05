@@ -23,6 +23,9 @@ Screen should show console after reboot.
 
 ## Kliperscreen https://klipperscreen.readthedocs.io/en/latest/
 
+https://github.com/th33xitus/kiauh
+plugin installer
+
 install from the repo:
 ```bash
 cd ~/
