@@ -42,3 +42,12 @@ It should work straight away, if the config file does not exist these commands g
 cp ~/KlipperScreen/ks_includes/KlipperScreen.conf ~/klipper_config/
 ln -s /home/pi/klipper_config/KlipperScreen.conf /home/pi/KlipperScreen/
 ```
+
+## Static ip changes
+add to /etc/dhcpcd.conf
+```
+interface wlan0
+static ip_address=192.168.1.**/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.**
+```
