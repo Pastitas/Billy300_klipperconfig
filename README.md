@@ -65,8 +65,9 @@ sudo usermod -aG docker pi
 
 Then add the user and run the docker container
 
-`` sudo usermod -aG docker pi
+``` sudo usermod -aG docker pi ```
 
 And start the container:
-``docker run --detach --volume=prusaslicer-novnc-data:/configs/ --volume=prusaslicer-novnc-prints:/prints/ -p 8080:8080 -e SSL_CERT_FILE="/etc/ssl/certs/ca-certificates.crt" --name=prusaslicer-novnc prusaslicer-novnc
+
+``` docker run --detach --volume=prusaslicer-novnc-data:/configs/ --volume=prusaslicer-novnc-prints:/prints/ -p 8080:8080 -e SSL_CERT_FILE="/etc/ssl/certs/ca-certificates.crt" --name=prusaslicer-novnc prusaslicer-novnc```
 
