@@ -56,6 +56,17 @@ static domain_name_servers=192.168.1.**
 Following https://github.com/helfrichmichael/prusaslicer-novnc
 docker container allows to run prusaslicer on the pi.
 ## Set up docker
-``` curl -fsSL https://get.docker.com -o get-docker.sh
-``` sudo sh get-docker.sh
+
+``` 
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker pi
+```
+
+Then add the user and run the docker container
+
 ``` sudo usermod -aG docker pi
+
+And start the container:
+```docker run --detach --volume=prusaslicer-novnc-data:/configs/ --volume=prusaslicer-novnc-prints:/prints/ -p 8080:8080 -e SSL_CERT_FILE="/etc/ssl/certs/ca-certificates.crt" --name=prusaslicer-novnc prusaslicer-novnc
+
