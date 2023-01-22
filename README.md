@@ -1,5 +1,6 @@
 # Setup instructions for Billy300
 Billy300 is a heavily modded ender3 with direct drive afterburner, tmc2208 in a skr1.3, touchscreen and running klipper firmware.
+TODO kiauh instructions https://github.com/th33xitus/kiauh
 
 ## Fluidd/Klipper https://docs.fluidd.xyz/
 Use the default image from fluidd and recompile the firmware for skr 1.3 with the following instructions: https://docs.vorondesign.com/build/software/skr13_klipper.html
