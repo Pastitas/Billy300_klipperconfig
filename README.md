@@ -42,7 +42,7 @@ Screen should show console after reboot.
 
 ```bash
 cd ~
-git clone https://github.com/Pastitas/billy3000_klipper_config.git klipper_config
+git clone https://github.com/Pastitas/billy3000_klipper_config.git /home/pastitas/printer_data/config
 ```
 
 ## Kiauh
