@@ -34,7 +34,7 @@ cd ~
 git clone https://github.com/Pastitas/billy3000_klipper_config.git klipper_config
 ```
 
-## KIAUH 
+## Kiauh
 https://github.com/th33xitus/kiauh
 
 ```bash
