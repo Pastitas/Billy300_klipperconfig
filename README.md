@@ -1,6 +1,11 @@
 # Setup instructions for Billy300
 Billy300 is a heavily modded ender3 with direct drive afterburner, tmc2208 in a skr1.3, touchscreen and running klipper firmware.
 
+## Prerequisites
+```bash
+sudo apt-get install tmux git neovim
+```
+
 ## LCD screen
 The lcd screen is the following:
 https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(A)
