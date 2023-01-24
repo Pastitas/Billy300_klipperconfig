@@ -25,7 +25,7 @@ cd ~
 git clone https://github.com/goodtft/LCD-show.git
 chmod +x LCD-show/LCD35-show
 cd LCD-show/
-sudo ./LCD35-show lite
+sudo ./LCD35-show
 ```
 Screen should show console after reboot.
 
