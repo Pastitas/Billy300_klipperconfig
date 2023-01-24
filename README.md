@@ -26,7 +26,15 @@ static routers=192.168.1.1
 static domain_name_servers=192.168.1.**
 ```
 
-# KIAUH klipper, fluidd and kliperscreen install
+# klipper, fluidd and kliperscreen install
+## Configs
+
+```bash
+cd ~
+git clone https://github.com/Pastitas/billy3000_klipper_config.git klipper_config
+```
+
+## KIAUH 
 https://github.com/th33xitus/kiauh
 
 ```bash
