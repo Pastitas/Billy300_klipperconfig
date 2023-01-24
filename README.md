@@ -12,7 +12,8 @@ With added modded circuitry to control backlight brightness with pin 18 of the r
 cd ~
 git clone https://github.com/goodtft/LCD-show.git
 chmod +x LCD-show/LCD35-show
-./LCD-show/LCD35-show lite
+cd LCD-show/
+./LCD35-show lite
 ```
 Screen should show console after reboot.
 
