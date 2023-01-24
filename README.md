@@ -5,6 +5,13 @@ Billy300 is a heavily modded ender3 with direct drive afterburner, tmc2208 in a 
 ```bash
 sudo apt-get install tmux git neovim
 ```
+edit /etc/default/locale to:
+```
+LANG=en_GB.UTF-8
+LC_TYPE=en_GB.UTF-8
+LC_MESSAGES=en_GB.UTF-8
+LC_ALL=en_GB.UTF-8
+```
 
 ### Static ip changes
 add to /etc/dhcpcd.conf
