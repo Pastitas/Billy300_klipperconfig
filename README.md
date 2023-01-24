@@ -6,12 +6,19 @@ Billy300 is a heavily modded ender3 with direct drive afterburner, tmc2208 in a 
 sudo apt-get install tmux git neovim
 ```
 
+### Static ip changes
+add to /etc/dhcpcd.conf
+```
+interface wlan0
+static ip_address=192.168.1.**/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.**
+```
 ## LCD screen
 The lcd screen is the following:
 https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(A)
 
 With added modded circuitry to control backlight brightness with pin 18 of the rpi.
-
 
 ```bash
 cd ~
@@ -21,15 +28,6 @@ cd LCD-show/
 sudo ./LCD35-show lite
 ```
 Screen should show console after reboot.
-
-## Static ip changes
-add to /etc/dhcpcd.conf
-```
-interface wlan0
-static ip_address=192.168.1.**/24
-static routers=192.168.1.1
-static domain_name_servers=192.168.1.**
-```
 
 # klipper, fluidd and kliperscreen install
 ## Configs
