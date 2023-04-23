@@ -48,14 +48,17 @@ Screen should show console after reboot.
 ## Configs
 
 ```bash
-git clone https://github.com/Pastitas/billy3000_klipper_config.git /home/pastitas/printer_data/config
+cd ~
+mkdir printer_data
+git clone https://github.com/Pastitas/billy3000_klipper_config.git printer_data/config
 ```
 
 ## Kiauh
 https://github.com/th33xitus/kiauh
 
 ```bash
-git clone https://github.com/th33xitus/kiauh.git /home/pastitas/kiauh
+cd ~
+git clone https://github.com/th33xitus/kiauh.git 
 ./kiauh/kiauh.sh
 
 ```
