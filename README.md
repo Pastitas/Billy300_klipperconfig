@@ -29,8 +29,8 @@ sudo usermod -a -G sudo klipper
 sudo passwd klipper
 ```
 
-## LCD screen
-The lcd screen is the following:
+## Touchscreen
+The lcd touchscreen is the following:
 https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(A)
 With added modded circuitry to control backlight brightness with PWM in pin 18 of the rpi.
 
