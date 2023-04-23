@@ -21,11 +21,18 @@ static ip_address=192.168.1.**/24
 static routers=192.168.1.1
 static domain_name_servers=192.168.1.**
 ```
+
+### Create Klipper user
+```
+sudo useradd -G tty,dialout -m -d /opt/klipper klipper
+sudo usermod -a -G sudo klipper
+sudo passwd klipper
+```
+
 ## LCD screen
 The lcd screen is the following:
 https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(A)
-
-With added modded circuitry to control backlight brightness with pin 18 of the rpi.
+With added modded circuitry to control backlight brightness with PWM in pin 18 of the rpi.
 
 ```bash
 cd ~
@@ -42,7 +49,8 @@ Screen should show console after reboot.
 
 ```bash
 cd ~
-git clone https://github.com/Pastitas/billy3000_klipper_config.git /home/pastitas/printer_data/config
+mkdir printer_data
+git clone https://github.com/Pastitas/billy3000_klipper_config.git printer_data/config
 ```
 
 ## Kiauh
@@ -50,9 +58,18 @@ https://github.com/th33xitus/kiauh
 
 ```bash
 cd ~
-git clone https://github.com/th33xitus/kiauh.git
+git clone https://github.com/th33xitus/kiauh.git 
 ./kiauh/kiauh.sh
 
+```
+
+
+
+### Cleanup
+https://www.nerdsmith.co.uk/?p=163
+```
+sudo passwd -l klipper
+sudo deluser klipper sudo
 ```
 
 # OLD
@@ -81,3 +98,5 @@ It should work straight away, if the config file does not exist these commands g
 cp ~/KlipperScreen/ks_includes/KlipperScreen.conf ~/klipper_config/
 ln -s /home/pi/klipper_config/KlipperScreen.conf /home/pi/KlipperScreen/
 ```
+
+
