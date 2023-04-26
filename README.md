@@ -69,6 +69,9 @@ cd
 git clone https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
 ln -s ~/Klipper-Adaptive-Meshing-Purging/Configuration printer_data/config/KAMP
 ```
+## ADXL345
+https://github.com/EsserPrototyping/Seeed-XIAO-with-ADXL345-for-Klipper
+
 
 ### Cleanup (OPTIONAL)
 https://www.nerdsmith.co.uk/?p=163
