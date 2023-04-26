@@ -1,5 +1,4 @@
-# Setup instructions for Billy300
-Billy300 is a heavily modded ender3 with direct drive afterburner, tmc2208 in a skr1.3, touchscreen and running klipper firmware.
+# Setup instructions for Klipper
 
 ## Prerequisites
 ```bash
@@ -22,11 +21,11 @@ static routers=192.168.1.1
 static domain_name_servers=192.168.1.**
 ```
 
-### Create Klipper user
+### Create extra user
 ```
-sudo useradd -G tty,dialout -m -d /opt/klipper klipper
-sudo usermod -a -G sudo klipper
-sudo passwd klipper
+sudo useradd -G tty,dialout -m -d /home/klipper pastitas
+sudo usermod -a -G sudo pastitas
+sudo passwd pastitas
 ```
 
 ## Touchscreen
@@ -62,10 +61,16 @@ git clone https://github.com/th33xitus/kiauh.git
 ./kiauh/kiauh.sh
 
 ```
+## KAMP
+https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging
 
+```bash
+cd
+git clone https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+ln -s ~/Klipper-Adaptive-Meshing-Purging/Configuration printer_data/config/KAMP
+```
 
-
-### Cleanup
+### Cleanup (OPTIONAL)
 https://www.nerdsmith.co.uk/?p=163
 ```
 sudo passwd -l klipper
