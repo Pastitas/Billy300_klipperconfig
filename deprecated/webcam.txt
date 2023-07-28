@@ -1,0 +1,11 @@
+### Configure which camera to use
+#
+# Available options are:
+# - auto: tries first usb webcam, if that's not available tries raspi cam
+# - usb: only tries usb webcam
+# - raspi: only tries raspi cam
+#
+# Defaults to auto
+#
+camera="usb"
+
