@@ -33,11 +33,18 @@ gcode_store_size = 1000
 
 [power printer]
 type = gpio
+on_when_job_queued = True
 off_when_shutdown = True
 locked_while_printing = True
 restart_klipper_when_powered = True
 initial_state = on
 pin = !gpiochip0/gpio21
+
+[power light]
+type = klipper_device
+object_name = gcode_macro _power_caselight
+locked_while_printing = False
+initial_state = off
 
 [update_manager]
 channel = dev
@@ -70,4 +77,12 @@ type = web
 channel = stable
 repo = mainsail-crew/mainsail
 path = ~/mainsail
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
 
