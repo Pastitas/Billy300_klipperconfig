@@ -30,7 +30,8 @@ sudo passwd pastitas
 
 ## Touchscreen
 The lcd dsi touchscreen is similar to https://www.waveshare.com/wiki/5inch_DSI_LCD
-WIP
+WIP https://www.raspberrypi.com/documentation/accessories/display.html
+https://klipperscreen.readthedocs.io/en/latest/Troubleshooting/Rotation/
 
 ```bash nano /boot/cmdline.txt
 video=DSI-1:800x480@60,rotate=180
