@@ -30,9 +30,14 @@ sudo passwd pastitas
 
 ## Touchscreen
 The lcd dsi touchscreen is similar to https://www.waveshare.com/wiki/5inch_DSI_LCD
+WIP
 
 ```bash nano /boot/cmdline.txt
 video=DSI-1:800x480@60,rotate=180
+```
+
+```bash nano /boot/config.txt
+dtoverlay=vc4-kms-dsi-7inch
 ```
 
 The lcd touchscreen is the following:
