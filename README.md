@@ -33,14 +33,16 @@ The lcd dsi touchscreen is similar to https://www.waveshare.com/wiki/5inch_DSI_L
 WIP https://www.raspberrypi.com/documentation/accessories/display.html
 https://klipperscreen.readthedocs.io/en/latest/Troubleshooting/Rotation/
 
-```bash nano /boot/cmdline.txt
-video=DSI-1:800x480@60,rotate=180
-```
+https://osoyoo.com/2019/09/20/instruction-for-raspberry-pi-5-dsi-touch-screen/
 
-```bash nano /boot/config.txt
-dtoverlay=vc4-kms-dsi-7inch
+```bash /boot/config.txt
+ #dtoverlay=vc4-kms-v3d
+.
+.
+.
+display_lcd_rotate=2
+dtoverlay=rpi-ft5406,touchscreen-inverted-x=1,touchscreen-inverted-y=1
 ```
-
 The lcd touchscreen is the following:
 https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(A)
 With added modded circuitry to control backlight brightness with PWM in pin 18 of the rpi.
