@@ -26,6 +26,10 @@ cors_domains =
 
 [file_manager]
 enable_object_processing = True
+queue_gcode_uploads = True
+
+[job_queue]
+load_on_startup = True
 
 [data_store]
 temperature_store_size = 600
